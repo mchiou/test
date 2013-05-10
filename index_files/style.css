@@ -1,0 +1,636 @@
+body {
+  background: white;
+  color: #404040;
+  font: 400 16px/1.5em 'Droid Serif', serif;	
+}
+
+.content{
+  min-width:1285px;
+}
+
+/* fixed header */
+
+section {
+  margin: 0 auto;
+  position: relative;
+  width: 660px;
+  height: auto;
+}
+
+header {
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+}
+
+header {
+  background: #1C1C1C;
+  opacity: 0.8;
+  height: 50px;
+}
+header.fixed {
+  position: fixed;
+  top: 0;
+  z-index: 4;
+}
+
+header.fixed img {
+margin: 7px 0 0 15px;
+}
+
+/* menu */
+
+.num {
+margin-right:5px;
+}
+
+#menu {
+display: block;
+position: fixed;
+width:200px;
+background:rgba(255, 255, 255, 0.8);
+z-index:200;
+overflow:hidden;
+font-family: "Droid Sans", serif;
+top: 75px;
+right: 40px;
+border-radius: 2px;
+padding: 5px 15px 5px 15px;
+border-left: solid 1px rgba(201, 201, 201, 0.5);
+}
+
+#menu a {
+color: rgb(64, 64, 64);
+text-decoration: none;
+}
+
+#menu a:hover {
+color: #707070; 
+text-decoration:underline;
+}
+
+#menu .sub{
+  color:#686868;
+}
+
+/* header */
+
+.introheader{
+min-width: 1285px;
+display: block;
+}
+
+.subheader{
+width: 1362px;
+height: 450px;
+display: inline-block;
+margin: 40px 0 40px;
+}
+
+.image{
+z-index: 1;
+width: 100%;
+}
+
+
+
+.text{
+z-index: 2;
+position: absolute;
+width: 400px;
+left: 300px;
+top: 370px;
+}
+
+.subheader .text{
+z-index: 2;
+position: relative;
+left: 340px;
+top: -200px;
+width: 600px;
+font-family: "Droid Sans", serif;
+letter-spacing: 1px;
+text-shadow: 0.1em 0.1em 0.2em rgba(0, 0, 0, 0.5);
+}
+
+/* title elements */
+
+h1,
+h2,
+h3,
+h4,
+h6 {
+  font-family: 'Petrona', serif;
+  font-weight: normal;
+}
+
+h1 {
+font-size: 350%;
+line-height: 1.285em;
+margin-top: -3em;
+margin-bottom: 3em;
+margin-left: 250px;
+color: white;
+}
+
+h2 {
+  font-size: 300%;
+  line-height: 1em;
+  margin-top: .75em;
+  color: white;
+}
+
+h3{
+	font-size: 187.5%;
+	line-height: 1.84em;
+	font-family: 'Droid Serif', serif;
+	font-weight: 400;
+	margin-top: 0.5em;
+}
+
+h4 {
+  font-size: 100%;
+  margin-top: 0.5em;
+}
+
+h5 {
+	font-weight: bold;
+	font-family: 'Droid Serif', serif;
+	font-style: italic;
+	font-weight: 400;
+	line-height: 1.777em;
+	margin-top: 0.5em;
+	font-size: 125%;
+	color: #696969;
+}
+
+h6 {
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+.subhead {
+  font-size: 187.5%;
+  line-height: 1.84em;
+  margin-top: 1.5em;
+}
+
+.italicize {
+	font-family: 'Droid Serif', serif;
+	font-weight: 400;
+	font-size: 140%;
+	line-height: 1.777em;
+	margin-top: 1.8em;
+}
+
+/* body text */
+
+p {
+  padding: .5em 0 0.5em;
+  line-height:34px;
+font-family:'Droid Serif', serif;
+}
+
+.section-end{
+padding-bottom: 1.5em;
+}
+
+.talk p {
+  padding-top: 1.125em;
+}
+
+ul li {
+	list-style-type:circle;
+	line-height:34px;
+}
+
+li a:visited {
+color: #404040;
+}
+
+li.indent {
+	list-style-type:circle;
+	line-height:34px;
+	margin-left: 1em;
+}
+
+ol li {
+	list-style-type:decimal;
+	line-height:34px;
+}
+
+p a:visited, a:link, a:active{
+text-decoration: underline;
+color: #404040;
+}
+
+
+p a:hover{
+text-decoration: underline;
+color: #808080;
+}
+
+a:visited, a:link, a:active {
+text-decoration: underline;
+color: rgb(64, 64, 64);
+}
+
+/* section */
+.section_start{
+  padding-top:35px;
+margin-top:-35px;
+}
+
+/* img */
+img {
+  border-radius: 3px;
+}
+
+/* quote */
+
+blockquote {
+  font-family: 'Droid Serif', serif;
+  font-style: italic;
+  font-weight: 400;
+  /*border-left: 1px solid #d66b00;*/
+  padding-left: 0em;
+  padding-bottom: 0.75em;
+  font-size: 125%;
+  line-height: 1.75em;
+  margin-top: 0em;
+}
+
+blockquote .endquote {
+  color: #d66b00;
+  font-family: 'Droid Serif', serif;
+  font-style: normal;
+  line-height: 0;
+}
+
+.underline {
+  border-bottom: 1px dashed #d66b00;
+}
+
+.panel {
+  margin-bottom: 4em;
+}
+
+/* pull quote */
+
+.panel-member {
+  float: left;
+  margin-top: 1em;
+  margin-bottom:0.5em;
+ /* width: 100%;*/
+}
+.panel-member img.speaker {
+  margin-right: 1.5em;
+  margin-top: .8em;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+.panel-member .speaker-info {
+  width: 75%;
+  margin-bottom: 1.5em;
+}
+.panel-member .speaker-info h4 {
+  margin-top: -0.12em em;
+  margin-bottom: 0.25em;
+  letter-spacing: 2px;
+  
+}
+.panel-member .speaker-info .italicize {
+  color: #808080;
+}
+.panel-member .speaker-info p {
+  padding: 1em 0 0;
+}
+
+.image-credit {
+  color: #b2b2b2;
+  font-size: 0.75em;
+}
+.speaker.pull-left{
+text-decoration: none;
+}
+
+/*designer tip*/
+
+.dadvantage {
+padding: 1em 1.5em 1em 1.5em;
+margin: 0em auto 2em auto;
+/*border-radius: 3px;*/
+float: center;
+width: 80%;
+border-top: 2px solid rgb(217, 217, 217);
+border-bottom: 2px solid rgb(217, 217, 217);
+background: rgb(248, 248, 248);
+}
+
+.dadvantage img.unicorn {
+  margin-right: 1.25em;
+  margin-top: .8em;
+  margin-left: 1.25em;
+}
+
+.dadvantage .c-two{
+float:left;
+border:none;
+background-size: 105px 105px;
+}
+
+.dadvantage .indv_icon{
+margin-top:10px;
+}
+
+.dadvantage .advantage-pullout {
+  font-family: 'Droid Serif', serif;  
+  font-weight: 100;
+  padding-left: 0em;
+  padding-top: .2em;
+  padding-bottom: 0em;
+  font-size: 140%;
+  line-height: 1.75em;
+  margin-top: 0em;
+  color: #7a7a7a;
+/*  font-style: italic;*/
+}
+
+.dadvantage p{
+    font-family: 'Droid Serif', serif;  
+    font-weight: 200;
+     color: #7a7a7a;
+/*     font-style: italic;*/
+}
+
+/* dfund */
+
+.dfund{
+padding: 1em 1.5em 1em 1.5em;
+margin: 1.5em auto 2em auto;
+float: center;
+width: 80%;
+height: auto;
+border-top: 2px solid rgb(217, 217, 217);
+border-bottom: 2px solid rgb(217, 217, 217);
+overflow: auto;
+background: rgb(248, 248, 248);
+}
+
+.dfund-info {
+  width: 70%;
+  margin-bottom: 1em;
+}
+
+.dfund .advantage-pullout {
+ font-family: 'Droid Serif', serif;
+/*  font-style: italic;*/
+  font-weight: 100;
+  padding-left: 0em;
+  padding-top: .2em;
+  padding-bottom: 0em;
+  font-size: 150%;
+  line-height: 1.75em;
+  margin-top: 0em;
+  color: #7a7a7a;
+}
+
+.dfund .c-two{
+float:left;
+border:none;
+margin-top: 15px;
+margin-right: 25px;
+margin-bottom: 0;
+}
+
+/* checklist */
+
+.checklist {
+	float: left;
+	background: rgba(217, 217, 217, 0.3);
+	padding: 1.5em;
+	margin: 0.5em 0em 2em 0em;
+	border-radius:  3px;
+}
+
+.checklist p {
+  padding-top: 0.25em;
+}
+
+/* glossary */
+
+.panel-member {
+  float: left;
+  margin-top: 1em;
+  margin-bottom:0.5em;
+  width: 100%;
+}
+
+.panel-member .word {
+padding: .5em 0 0.5em;
+width: 25%;
+line-height: 1.75em;
+font-style: italic;
+}
+
+.panel-member .definition {
+  width: 70%;
+  margin-bottom: 1em;
+  margin-left: 2em;
+    padding: .5em 0 0.5em;
+  line-height: 1.75em;
+}
+
+p.definition{
+  line-height: 1.75em;
+}
+
+.glossary_word{
+display: block;
+padding-top:50px;
+margin-top:-50px;
+}
+
+/* company icons */
+
+.icons{
+display: inline-block;
+position: relative;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 10px;
+width: 100%;
+}
+
+.icons a:link{
+text-decoration:none;
+}
+
+.icons article{
+float:left; 
+width:100px; 
+height:100px;
+margin-right: 5px;
+border-radius: 2px;
+} 
+
+.fdw-background{
+background-color:rgba(0,0,0,0.6);
+width:100%;
+height:100%;
+}
+
+.fdw-background h4{
+font-size:20px;
+font-family:'Droid Serif', serif;
+font-weight: 400;
+text-align:center;
+padding:40px 40px 0;
+}
+
+.c-two{
+ float:left; 
+margin-bottom:10px;
+ background-size: 100px;
+ background-position: center;
+ background-repeat: no-repeat;
+border: 1px solid #e4e4e4;
+}
+
+.indv_icon{
+  width:105px;
+  float:left;
+}
+
+.icon_name{
+  font-family: 'Droid Serif', serif;
+  font-size:90%;
+  font-style: italic;
+  margin-top:10px;
+  text-decoration: none;
+  line-height:1.2em;
+  width: 100px;
+}
+
+/* tip quote */
+
+.tipquote {
+  font-family: 'Droid Serif', serif;
+  font-style: italic;
+  font-weight: 400;
+  padding-left: 0em;
+  padding-bottom: 0.25em;
+  font-size: 100%;
+  line-height: 1.75em;
+  margin-top: 0.3em;
+}
+
+/* footer */
+
+#section-6{
+  border-top: black;
+}
+
+footer {
+  background: white;
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  bottom: 0;
+  padding-top:1em;
+padding-bottom: 10em;
+border-style:solid;
+border-top:thick double #d9d9d9;
+}
+
+footer p {
+  color: rgb(64, 64, 64);
+  font-family: 'Droid Serif', serif;
+  font-size: 125%;
+  font-style: italic;
+}
+
+
+/* generic classes */
+
+.pull-left {
+  float: left;
+}
+.pull-right {
+  float: right;
+}
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.clearfix {
+  display: inline-block;
+}
+
+.clearfloat{
+clear:both;
+}
+
+/* start commented backslash hack \*/
+* html .clearfix {
+  height: 1%;
+}
+.clearfix {
+  display: block;
+}
+
+/* designer name */
+
+.designer-name {
+display: inline-block;
+font-size: 100%;
+font-family: 'Droid Serif', serif;
+}
+
+/* social media */
+
+.social-media {
+display: inline-block;
+float: right;
+}
+
+a.speaker-fb,
+a.speaker-twitter {
+  -webkit-border-radius: 1.25em;
+  -moz-border-radius: 1.25em;
+  border-radius: 1.25em;
+  background: #d9d9d9;
+  display: inline-block;
+  margin-top: -0.25em;
+  margin-right: 0.89em;
+  height: 2.5em;
+  width: 2.5em;
+}
+
+a.speaker-fb img {
+  margin: 0.5625em;
+}
+a.speaker-fb:hover {
+  background: #5E7DAC;
+}
+a.speaker-twitter img {
+  margin: 0.7em 0.5em;
+}
+a.speaker-twitter:hover {
+  background: #20a3ca;
+
+.twitter-share-button {
+margin-bottom:20em;
+}
+
+.fb_edge_widget_with_comment {
+position: relative;
+top: 3px;
+}
+
+.share {
+}
